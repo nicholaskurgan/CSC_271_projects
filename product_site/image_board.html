@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Printbin Image Board Page</title>
+        
+    </head>
+
+<body>
+
+    <img src="images/website_logo.png" alt="Print bin website logo" width="100" height="100">
+
+    <h1>Printbin</h1>
+    <address>
+        Written by <a href=mailto:“disha@uplers.com”>Nicholas Kurgan</a>.<br>
+        nicholas_kurgan@uri.edu
+        </address>
+
+    <h2>Navbar </h2>
+
+    <ul>
+        <li> <a href="index.html">Home Page</a> </li>
+        <li> <a href="image_board.html" >Image Board</a></li>
+        <li> put link here</li>
+        <li> put link here</li>
+        <li> <a href="https://www.printables.com/" target="_blank">Other site like us :3</a></li>
+    </ul>
+
+    <h2>Welcome to the image board</h2>
+    <p>Here is where you can view and upload photos, wether it be your printer, your prints, or other 3d printer related projects. <br>
+        Dont forget to look at other posts for inspiration or to start a conversation, have fun and keep printing
+    </p> <br>
+
+    <h3>Best benchy print time record</h3>
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Printer</th>
+          <th>Modifications</th>
+          <th>Filament</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>ender 3</td>
+          <td>heavily modded</td>
+          <td>PLA plus</td>
+        </tr>
+        <tr>
+            <td>bob bobertson</td>
+            <td>bambu x1 carbon</td>
+            <td>non modded</td>
+            <td>PLA</td>
+        </tr>
+        <tr>
+            <td>emma stone</td>
+            <td>core xy home kit</td>
+            <td>slightly modded</td>
+            <td>PETG</td>
+        </tr>
+      </table>
+      <h3>winners video</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7lJmkTSoWLc?si=gkzk54JKDnzNt-U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <h3>Make a Post</h3>
+    <form>
+
+        <label for="fname">Post name:</label><br>
+        <input type="text" id="fname" name="fname" maxlength="50" size="50" required><br>
+
+        <input type="radio" id="html" name="your_stuff" value="your_work">
+        <label for="html">Your work</label><br>
+
+        <input type="radio" id="html" name="someones_stuff" value="other_work">
+        <label for="html">Cool stuff I found</label><br>
+
+        <label for="text">Post description:</label><br>
+        <input type="text" id="fname" name="fname" size="120" required><br>
+
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple required><br>
+
+        <label for="fname">Image description:</label><br>
+        <input type="text" id="fname" name="fname" size="800" required><br>
+
+        <input type="submit" value="Post">
+    </form>
+
+
+    <h3>Other Peoples Posts</h3>
+    <img src="images/example_post.png" alt="A 3d printed holder for a soda can, with a coffe mug style handle for ease of use" width="150" height="180">
+
+</body>
+</html>
