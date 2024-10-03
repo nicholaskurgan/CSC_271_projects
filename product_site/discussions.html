@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Printbin Discussions Page</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+<body>
+    
+    <img src="images/website_logo.png" alt="Print bin website logo" width="100" height="100">
+
+    <h1 >Printbin</h1> 
+    <address>
+        Written by <a href=mailto:“disha@uplers.com”>Nicholas Kurgan</a>.<br>
+        nicholas_kurgan@uri.edu
+        </address>
+
+
+    <h2 >Navbar </h2>
+
+    <ul>
+        <li> <a  href="index.html">Home Page </a> </li>
+        <li> <a href="image_board.html" >Image Board</a></li>
+        <li> <a id="current_page" href="discussions.html" >Discussion Board</a></li>
+        <li> put link here</li>
+           <li> <a href="https://www.printables.com/" target="_blank">Other site like us :3</a></li>
+    </ul>
+    
+
+    <h2>Welcome to the discussion board</h2>
+    <p>Here is the discussion board, where user text posts live and congregate. You can talk about all of your 3d printing stuff here <br>
+        like your projects, questions, or fun facts you wanna share with the community. The skys the limit so have fun and keep printing.
+    </p> <br>
+
+   
+
+    <h3>Make a Post</h3>
+    <form class="color">
+
+        <label for="pname">Post name:</label><br>
+        <input type="text" id="pname" name="pname" maxlength="50" size="50" required><br>
+
+        <input type="radio" id="yourWork" name="yourWork" value="yourWork">
+        <label for="yourWork">Your work</label><br>
+
+        <input type="radio" id="otherWork" name="otherWork" value="otherWork">
+        <label for="otherWork">Cool stuff I found</label><br>
+
+        <label for="desc">Post text:</label><br>
+        <input type="text" id="desc" name="desc" size="120" required><br>
+
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple><br>
+
+        <label for="imgDesc">Image description:</label><br>
+        <input type="text" id="imgDesc" name="imgDesc" size="800"><br>
+
+        <input type="submit" value="Post">
+    </form>
+
+
+    <h3>Other Peoples Posts</h3>
+    <img src="images/example_post.PNG" alt="A 3d printed holder for a soda can, with a coffe mug style handle for ease of use" width="150" height="180">
+    <p> look at this cool print I found online, I made it on my machine and it came out great heres a page link to the file</p>
+    <li> <a href="https://www.printables.com/model/180044-can-holder">https://www.printables.com/model/180044-can-holder</a> </li>
+
+</body>
+</html>

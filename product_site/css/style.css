@@ -1,0 +1,50 @@
+
+body {
+    background-color: rgb(228, 228, 228);
+  }
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    color: #292929;
+    background-color: orange;
+    text-align: center;
+    margin: 20px 0;
+}
+h2 {
+    font-family:'Times New Roman', Times, serif;
+    color: #292929;
+    background-color: orange;
+    text-align: center;
+    margin: 20px 80px 20px 10px;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif
+
+}
+a:link{
+    text-decoration: none;
+}
+
+a:hover {
+    background-color:rgb(189, 155, 91);
+    text-decoration: underline;
+}
+a:visited {
+    background-color:rgb(187, 170, 139);
+}
+
+
+#current_page {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(173, 173, 173);
+}
+
+form.color {
+    background-color:rgb(156, 156, 156);
+}
+
+.inline {
+    width: auto;
+    display: inline-block;
+}

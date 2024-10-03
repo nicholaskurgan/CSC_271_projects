@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Printbin Image Board Page</title>
-        
+        <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
 
 <body>
@@ -20,8 +20,8 @@
 
     <ul>
         <li> <a href="index.html">Home Page</a> </li>
-        <li> <a href="image_board.html" >Image Board</a></li>
-        <li> put link here</li>
+        <li> <a id="current_page" href="image_board.html" >Image Board</a></li>
+        <li> <a href="discussions.html" >Discussion Board</a></li>
         <li> put link here</li>
         <li> <a href="https://www.printables.com/" target="_blank">Other site like us :3</a></li>
     </ul>
@@ -63,7 +63,7 @@
 
 
     <h3>Make a Post</h3>
-    <form>
+    <form class="color">
 
         <label for="pname">Post name:</label><br>
         <input type="text" id="pname" name="pname" maxlength="50" size="50" required><br>
