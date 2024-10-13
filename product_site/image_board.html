@@ -8,29 +8,32 @@
 
 <body>
 
-    <img src="images/website_logo.png" alt="Print bin website logo" width="100" height="100">
+    <div class="header">
+        <div class="header-left">
+        <img src="images/website_logo.png" alt="Print bin website logo" width="100" height="100">
+        </div>
+    
+        
+        <div class="headder-right">
+            
+            <a  href="index.html">Home Page </a> 
+            <a id="current_page" href="image_board.html" >Image Board</a>
+            <a href="discussions.html" >Discussion Board</a>
+            <a href="trouble.html" >Trouble Shooting</a>
+            <a href="https://www.printables.com/" target="_blank">Other site like us :3</a>
+        
+        </div>
+        </div>
 
-    <h1>Printbin</h1>
-    <address>
-        Written by <a href=mailto:“disha@uplers.com”>Nicholas Kurgan</a>.<br>
-        nicholas_kurgan@uri.edu
-        </address>
-
-    <h2>Navbar </h2>
-
-    <ul>
-        <li> <a href="index.html">Home Page</a> </li>
-        <li> <a id="current_page" href="image_board.html" >Image Board</a></li>
-        <li> <a href="discussions.html" >Discussion Board</a></li>
-        <li> put link here</li>
-        <li> <a href="https://www.printables.com/" target="_blank">Other site like us :3</a></li>
-    </ul>
-
+    <div class="content">
+    <div class="card">
     <h2>Welcome to the image board</h2>
     <p>Here is where you can view and upload photos, wether it be your printer, your prints, or other 3d printer related projects. <br>
         Dont forget to look at other posts for inspiration or to start a conversation, have fun and keep printing
     </p> <br>
+    </div>
 
+    <div class="card">
     <h3>Best benchy print time record</h3>
     <table>
         <tr>
@@ -60,8 +63,9 @@
       </table>
       <h3>winners video</h3>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/7lJmkTSoWLc?si=gkzk54JKDnzNt-U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-
+    <div class="card">
     <h3>Make a Post</h3>
     <form class="color">
 
@@ -85,10 +89,18 @@
 
         <input type="submit" value="Post">
     </form>
+    </div>
 
-
+    <div class="card">
     <h3>Other Peoples Posts</h3>
     <img src="images/example_post.PNG" alt="A 3d printed holder for a soda can, with a coffe mug style handle for ease of use" width="150" height="180">
+    </div>
 
+    <div class="card">
+        <address>
+            Written by <a href=mailto:“disha@uplers.com”>Nicholas Kurgan</a>.<br>
+            nicholas_kurgan@uri.edu
+            </address>
+        </div>
 </body>
 </html>
