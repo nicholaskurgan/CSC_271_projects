@@ -39,7 +39,52 @@
         Post about your printers issues, filament jams, extrusion issues, nozzle replacement, we talk about it all here.
     </p> <br>
     </div>
+
+    <div class="card">
+    <h3>Common Issues</h3>
+    <p>Here are some common issues that people have with their 3d printers</p>
+    <!-- Filter label and dropdown to filter reviews by rating -->
+    <label for="rating-filter">Filter by rating:</label>
+    <select id="rating-filter">
+        <!-- Filter options for each rating level and 'All' option -->
+        <option value="All">All</option>
+        <option value="5">bed adhesion</option>
+        <option value="4">belt</option>
+        <option value="3">nozzle</option>
+        <option value="2">axis</option>
+        <option value="1">extrusion</option>
+    </select>
    
+    <div class="help-card" data-rating="1">
+        
+        <p class="help-text">Having extrision issues, check the condition of your extruder gear and heater block. if the gears are damaged or misaligned remedy them.
+            If the heater core is blocked, either clear or replace it.
+        </p>
+    </div>
+
+    <div class="help-card" data-rating="2">
+        
+        <p class="help-text">Having axis issues, these are harder to nail down, the most likely issues are your linear rails need to be lubricated and cleaned.
+            Improper slicer settings can affect this too.
+        </p>
+    </div>
+
+    <div class="help-card" data-rating="3">
+        
+        <p class="help-text">Having nozzle issues. It its best to replace the nozzle as they are usually cheap, if you have an expensive or special nozzle cleaning it out will be a good solution</p>
+    </div>
+
+    <div class="help-card" data-rating="4">
+        
+        <p class="help-text">Having belt issues. Retension the belts and if they are still beeing problemating the may need to be realigned or replaced</p>
+    </div>
+
+    <div class="help-card" data-rating="5">
+        
+        <p class="help-text">Having adhesion issues. add elmers glue stuck to your bed as a first layer. if the print bed is old or worn out consider replacing it</p>
+    </div>
+
+    </div>
    
     <div class="card">
     <h3>Make a Post</h3>
@@ -88,5 +133,7 @@
     </div>
     </div>
 
+
+    <script src="js/troubleshooter.js"></script>
 </body>
 </html>

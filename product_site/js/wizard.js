@@ -11,9 +11,11 @@ document.getElementsByClassName('wizard')[0].addEventListener('click', function(
 
     if (wizard_happened == true) { //change headers to evil laugh
         var elements = document.getElementsByTagName('h3');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].textContent = "MUAHAHAHA";
-        }
+        var i = 0;
+            while (i < elements.length) {
+                elements[i].textContent = "MUAHAHAHA";
+                i++;
+            }
         }
         
 });
