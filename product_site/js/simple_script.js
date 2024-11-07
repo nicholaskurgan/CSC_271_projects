@@ -10,6 +10,9 @@ var weekday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday
 
 var chosen_time;
 
+//function to process the time and make a div edit
+function time_slot (chosen_time, time_frames, hours){
+
 if (hours < 12){
     chosen_time = time_frames[0];
 }
@@ -45,6 +48,9 @@ else if (day == 6){
 var element = document.getElementById('time_welcome');
 element.innerHTML = "It's a great " + day +" " + chosen_time + " for some 3d printing" ;
 
+}//end of function
 
+
+time_slot (chosen_time, time_frames, hours);//running the function
 
 

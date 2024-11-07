@@ -1,5 +1,7 @@
-//going to attempt to add a little fun thing that turns the background blue, and say a wizard did it
 
+function the_wizard(){
+
+//going to attempt to add a little fun thing that turns the background blue, and say a wizard did it
 var wizard_happened = false;
 
 //wizard makes it blue
@@ -20,6 +22,10 @@ document.getElementsByClassName('wizard')[0].addEventListener('click', function(
         
 });
 }
+
+}
+//summon the wizard
+the_wizard();
 
 
 
