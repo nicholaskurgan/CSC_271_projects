@@ -56,6 +56,10 @@ form.color {
     background-color:rgb(209, 209, 209);
 }
 
+#feedback {
+  font-family:'Times New Roman', Times, serif;
+  color:red
+}
 
 
 

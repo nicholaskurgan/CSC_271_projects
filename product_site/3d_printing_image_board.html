@@ -70,7 +70,7 @@
       <h3>Benchy winners video</h3>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/7lJmkTSoWLc?si=gkzk54JKDnzNt-U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-
+<!-- 
     <div class="card">
     <h3>Make a Post</h3>
     <form class="color">
@@ -96,6 +96,34 @@
         <input type="submit" value="Post">
     </form>
     </div>
+    -->
+    <div class="card">
+        <h3>Make a Post</h3>
+        <form class="color" id="post_form">
+    
+            <label for="pname">Post name:</label><br>
+            <input type="text" id="pname" name="pname" maxlength="50" size="50" required><br>
+    
+            <input type="radio" id="yourWork" name="yourWork" value="yourWork">
+            <label for="yourWork">Your work</label><br>
+    
+            <input type="radio" id="otherWork" name="otherWork" value="otherWork">
+            <label for="otherWork">Cool stuff I found</label><br>
+    
+            <label for="desc">Post text:</label><br>
+            <input type="text" id="desc" name="desc" size="50"  required><br>
+    
+            <label for="files">Select files:</label>
+            <input type="file" id="files" name="files" multiple><br>
+    
+            <label for="imgDesc">Image description:</label><br>
+            <input type="text" id="imgDesc" name="imgDesc" size="50"><br>
+    
+            <input type="submit" value="Post">
+        </form>
+        <div id = "feedback"></div>
+        </div>
+        <script src="js/post_handler.js"></script>
 
     <div class="card">
     <h3>Other Peoples Posts</h3>

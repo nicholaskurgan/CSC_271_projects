@@ -44,7 +44,7 @@
    
     <div class="card">
     <h3>Make a Post</h3>
-    <form class="color">
+    <form class="color" id="post_form">
 
         <label for="pname">Post name:</label><br>
         <input type="text" id="pname" name="pname" maxlength="50" size="50" required><br>
@@ -66,7 +66,10 @@
 
         <input type="submit" value="Post">
     </form>
+    <div id = "feedback"></div>
     </div>
+    <script src="js/post_handler.js"></script>
+  <!--todo, make these holder posts into their own"post" div within the card div, this will let you generate them from scripts later-->
 
     <div class="card">
     <h3>Other Peoples Posts</h3>
