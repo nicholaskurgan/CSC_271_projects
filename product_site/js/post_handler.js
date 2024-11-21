@@ -69,3 +69,35 @@ form.addEventListener("submit", function(event) {
     }
     
   }, false);
+
+
+
+
+  //making default post constructor
+  function Post (title, description, origional, img, alt_text ) {
+    this.title = title;
+    this.description = description;
+    this.origional = origional;//boolean
+    this.img = img;
+    this.alt_text = alt_text;
+    this.generate_post = function () {
+        var postHolder = document.getElementById("post_holder");
+        postHolder.innerHTML = 
+    "<div class='post'>" +
+    "<h2>" + this.title + "</h2>" +
+    "<p>" + this.description + "</p>" +
+    "<img id='post_image' src='" + this.img + "' alt='" + this.alt_text + "'>" +
+    "</div>";
+    };
+};
+
+
+//populate a test post
+var test_post = new Post("Test Post", "This is a test post", true, "images/aluminum.jpg", "ball of foil");
+test_post.generate_post();
+
+//todo implement a system to take in user post data and make a post with it
+
+
+
+

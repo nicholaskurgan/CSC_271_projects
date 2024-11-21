@@ -111,6 +111,21 @@ form.color {
     padding:10px;
     float:left
   }
+
+  #post_holder {
+    background-color: rgb(212, 212, 212);
+    float:left;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:12px;
+    width:100%
+  }
+
+  #post_image {
+    padding-left:20px;
+    max-width:50%;
+    max-height:auto;
+  }
   
   
 
