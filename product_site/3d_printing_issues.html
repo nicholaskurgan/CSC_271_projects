@@ -87,32 +87,33 @@
     </div>
    
     <div class="card">
-    <h3>Make a Post</h3>
-    <form class="color">
-
-        <label for="pname">Post name:</label><br>
-        <input type="text" id="pname" name="pname" maxlength="50" size="50" required><br>
-
-        <input type="radio" id="yourWork" name="yourWork" value="yourWork">
-        <label for="yourWork">Issue to solve</label><br>
-
-        <input type="radio" id="otherWork" name="otherWork" value="otherWork">
-        <label for="otherWork">Solving an issue</label><br>
-
-        <label for="desc">Post text:</label><br>
-        <input type="text" id="desc" name="desc" size="50" required><br>
-
-        <label for="files">Select files:</label>
-        <input type="file" id="files" name="files" multiple><br>
-
-        <label for="imgDesc">Image description:</label><br>
-        <input type="text" id="imgDesc" name="imgDesc" size="50"><br>
-
-        <input type="submit" value="Post">
-    </form>
-    </div>
+        <h3>Make a Post</h3>
+        <form class="color" id="post_form">
     
-
+            <label for="pname">Post name:</label><br>
+            <input type="text" id="pname" name="pname" maxlength="50" size="50" required><br>
+    
+            <input type="radio" id="yourWork" name="yourWork" value="yourWork">
+            <label for="yourWork">Your work</label><br>
+    
+            <input type="radio" id="otherWork" name="otherWork" value="otherWork">
+            <label for="otherWork">Cool stuff I found</label><br>
+    
+            <label for="desc">Post text:</label><br>
+            <input type="text" id="desc" name="desc" size="50"  required><br>
+    
+            <label for="files">Select files:</label>
+            <input type="file" id="files" name="files" multiple><br>
+    
+            <label for="imgDesc">Image description:</label><br>
+            <input type="text" id="imgDesc" name="imgDesc" size="50"><br>
+    
+            <input type="submit" value="Post">
+        </form>
+        <div id = "feedback"></div>
+        </div>
+    
+    <!--
     <div class="card">
     <h3>Other Peoples Posts</h3> <br>
     <h4> my printer broke yesterday</h4>  
@@ -124,6 +125,20 @@
 
     <p> my printer is broken and wont work, i dont know whats wrong with it</p>
     </div>
+    -->
+    <div class="card">
+        <h3>Other Peoples Posts</h3>
+            <div id="post_holder">
+                <!--this will hold our example post for now-->
+            </div>
+            <!--
+        <img src="images/example_post.PNG" alt="A 3d printed holder for a soda can, with a coffe mug style handle for ease of use" width="150" height="180">
+        <p> look at this cool print I found online, I made it on my machine and it came out great heres a page link to the file</p>
+        <a href="https://www.printables.com/model/180044-can-holder">https://www.printables.com/model/180044-can-holder</a>
+        -->
+        <script src="js/post_handler.js"></script>
+        </div>
+        </div>
 
     <div class="card">
     <address>
