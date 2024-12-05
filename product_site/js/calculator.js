@@ -21,4 +21,4 @@ document.getElementsByTagName('button')[0].addEventListener('click', function() 
 });
 
 
-calculate(price, weight);
+    calculate(price, weight);

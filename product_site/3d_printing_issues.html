@@ -15,80 +15,80 @@
 <body>
     
     <div class="header">
-    <div class="header-left">
-    <img src="images/website_logo.png" alt="Print bin website logo" width="100" height="100">
-    </div>
+        <div class="header-left">
+            <img src="images/website_logo.png" alt="Print bin website logo" width="100" height="100">
+        </div>
 
     
-    <div class="headder-right">
+        <div class="header-right">
         
-        <a href="3d_printing_hub.html">Home Page </a> 
-        <a href="3d_printing_image_board.html" >Image Board</a>
-        <a href="3d_printer_discussions.html" >Discussion Board</a>
-        <a id="current_page" href="3d_printing_issues.html" >Trouble Shooting</a>
-        <a href="https://www.printables.com/" target="_blank">Other site like us :3</a>
+            <a href="3d_printing_hub.html">Home Page </a> 
+            <a href="3d_printing_image_board.html" >Image Board</a>
+            <a href="3d_printer_discussions.html" >Discussion Board</a>
+            <a id="current_page" href="3d_printing_issues.html" >Trouble Shooting</a>
+            <a href="https://www.printables.com/" target="_blank">Other site like us :3</a>
     
-    </div>
+        </div>
     </div>
 
 
     <div class="content">
-    <div class="card">
-    <h2>Welcome to 3d printer troubleshooting</h2>
-    <p>Nothing works, everyhting broken, and this is the place to talk about it. Get printer repair suggestions and guides from other users.
-        Post about your printers issues, filament jams, extrusion issues, nozzle replacement, we talk about it all here.
-    </p> <br>
-    </div>
+        <div class="card">
+            <h2>Welcome to 3d printer troubleshooting</h2>
+            <p>Nothing works, everyhting broken, and this is the place to talk about it. Get printer repair suggestions and guides from other users.
+            Post about your printers issues, filament jams, extrusion issues, nozzle replacement, we talk about it all here.
+            </p> <br>
+        </div>
 
-    <div class="card">
-    <h3>Common Issues</h3>
-    <p>Here are some common issues that people have with their 3d printers</p>
-    <!-- Filter label and dropdown to filter reviews by rating -->
-    <label for="rating-filter">Filter by rating:</label>
-    <select id="rating-filter">
-        <!-- Filter options for each rating level and 'All' option -->
-        <option value="All">All</option>
-        <option value="5">bed adhesion</option>
-        <option value="4">belt</option>
-        <option value="3">nozzle</option>
-        <option value="2">axis</option>
-        <option value="1">extrusion</option>
-    </select>
+        <div class="card">
+            <h3>Common Issues</h3>
+            <p>Here are some common issues that people have with their 3d printers</p>
+            <!-- Filter label and dropdown to filter reviews by rating -->
+            <label for="rating-filter">Filter by rating:</label>
+            <select id="rating-filter">
+                <!-- Filter options for each rating level and 'All' option -->
+                <option value="All">All</option>
+                <option value="5">bed adhesion</option>
+                <option value="4">belt</option>
+                <option value="3">nozzle</option>
+                <option value="2">axis</option>
+                <option value="1">extrusion</option>
+            </select>
    
-    <div class="help-card" data-rating="1">
-        
-        <p class="help-text">Having extrision issues, check the condition of your extruder gear and heater block. if the gears are damaged or misaligned remedy them.
-            If the heater core is blocked, either clear or replace it.
-        </p>
-    </div>
+            <div class="help-card" data-rating="1">
 
-    <div class="help-card" data-rating="2">
+                <p class="help-text">Having extrision issues, check the condition of your extruder gear and heater block. if the gears are damaged or misaligned remedy them.
+                    If the heater core is blocked, either clear or replace it.
+                </p>
+            </div>
         
-        <p class="help-text">Having axis issues, these are harder to nail down, the most likely issues are your linear rails need to be lubricated and cleaned.
-            Improper slicer settings can affect this too.
-        </p>
-    </div>
+            <div class="help-card" data-rating="2">
 
-    <div class="help-card" data-rating="3">
+                <p class="help-text">Having axis issues, these are harder to nail down, the most likely issues are your linear rails need to be lubricated and cleaned.
+                    Improper slicer settings can affect this too.
+                </p>
+            </div>
         
-        <p class="help-text">Having nozzle issues. It its best to replace the nozzle as they are usually cheap, if you have an expensive or special nozzle cleaning it out will be a good solution</p>
-    </div>
+            <div class="help-card" data-rating="3">
 
-    <div class="help-card" data-rating="4">
+                <p class="help-text">Having nozzle issues. It its best to replace the nozzle as they are usually cheap, if you have an expensive or special nozzle cleaning it out will be a good solution</p>
+            </div>
         
-        <p class="help-text">Having belt issues. Retension the belts and if they are still beeing problemating the may need to be realigned or replaced</p>
-    </div>
+            <div class="help-card" data-rating="4">
 
-    <div class="help-card" data-rating="5">
+                <p class="help-text">Having belt issues. Retension the belts and if they are still beeing problemating the may need to be realigned or replaced</p>
+            </div>
         
-        <p class="help-text">Having adhesion issues. add elmers glue stuck to your bed as a first layer. if the print bed is old or worn out consider replacing it</p>
-    </div>
+            <div class="help-card" data-rating="5">
 
-    </div>
+                <p class="help-text">Having adhesion issues. add elmers glue stuck to your bed as a first layer. if the print bed is old or worn out consider replacing it</p>
+            </div>
+
+        </div>
    
-    <div class="card">
-        <h3>Make a Post</h3>
-        <form class="color" id="post_form">
+        <div class="card">
+            <h3>Make a Post</h3>
+            <form class="color" id="post_form">
     
             <label for="pname">Post name:</label><br>
             <input type="text" id="pname" name="pname" maxlength="50" size="50" required><br>
@@ -109,36 +109,20 @@
             <input type="text" id="imgDesc" name="imgDesc" size="50"><br>
     
             <input type="submit" value="Post">
-        </form>
-        <div id = "feedback"></div>
+            </form>
+            <div id = "feedback"></div>
         </div>
     
-    <!--
-    <div class="card">
-    <h3>Other Peoples Posts</h3> <br>
-    <h4> my printer broke yesterday</h4>  
-         
-
-    <div class="image">
-    <img src="images/aluminum.jpg" alt="A ball of foil, it used to be a 3d printer" width="150" height="180">
-    </div>
-
-    <p> my printer is broken and wont work, i dont know whats wrong with it</p>
-    </div>
-    -->
-    <div class="card">
-        <h3>Other Peoples Posts</h3>
-            <div id="post_holder">
+    
+        <div class="card">
+            <h3>Other Peoples Posts</h3>
+                <div id="post_holder">
                 <!--this will hold our example post for now-->
-            </div>
-            <!--
-        <img src="images/example_post.PNG" alt="A 3d printed holder for a soda can, with a coffe mug style handle for ease of use" width="150" height="180">
-        <p> look at this cool print I found online, I made it on my machine and it came out great heres a page link to the file</p>
-        <a href="https://www.printables.com/model/180044-can-holder">https://www.printables.com/model/180044-can-holder</a>
-        -->
-        <script src="js/post_handler.js"></script>
+                </div>
+          
+            <script src="js/post_handler.js"></script>
         </div>
-        </div>
+    </div>
 
     <div class="card">
     <address>
@@ -146,7 +130,7 @@
         nicholas_kurgan@uri.edu
         </address>
     </div>
-    </div>
+    
 
 
     <script src="js/troubleshooter.js"></script>

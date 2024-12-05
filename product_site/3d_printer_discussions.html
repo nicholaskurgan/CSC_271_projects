@@ -18,11 +18,11 @@
     
     <div class="header">
         <div class="header-left">
-        <img src="images/website_logo.png" alt="Print bin website logo" width="100" height="100">
+            <img src="images/website_logo.png" alt="Print bin website logo" width="100" height="100">
         </div>
     
         
-        <div class="headder-right">
+        <div class="header-right">
             
             <a  href="3d_printing_hub.html">Home Page </a> 
             <a href="3d_printing_image_board.html" >Image Board</a>
@@ -31,58 +31,54 @@
             <a href="https://www.printables.com/" target="_blank">Other site like us :3</a>
         
         </div>
-        </div>
+    </div>
     
 
     <div class="content">
-    <div class="card">
-    <h2>Welcome to the 3d printing discussion board</h2>
-    <p>Here is the 3d printing discussion board, where you can find posts related to 3d printing and relevant topics. You can talk about all of your 3d printing stuff here <br>
-        like your projects, questions, or fun facts you wanna share with the community. The skys the limit so have fun and keep printing.
-    </p> <br>
-    </div>
-   
-    <div class="card">
-    <h3>Make a Post</h3>
-    <form class="color" id="post_form">
-
-        <label for="pname">Post name:</label><br>
-        <input type="text" id="pname" name="pname" maxlength="50" size="50" required><br>
-
-        <input type="radio" id="yourWork" name="yourWork" value="yourWork">
-        <label for="yourWork">Your work</label><br>
-
-        <input type="radio" id="otherWork" name="otherWork" value="otherWork">
-        <label for="otherWork">Cool stuff I found</label><br>
-
-        <label for="desc">Post text:</label><br>
-        <input type="text" id="desc" name="desc" size="50"  required><br>
-
-        <label for="files">Select files:</label>
-        <input type="file" id="files" name="files" multiple><br>
-
-        <label for="imgDesc">Image description:</label><br>
-        <input type="text" id="imgDesc" name="imgDesc" size="50"><br>
-
-        <input type="submit" value="Post">
-    </form>
-    <div id = "feedback"></div>
-    </div>
-    
-  <!--todo, make these holder posts into their own"post" div within the card div, this will let you generate them from scripts later-->
-
-    <div class="card">
-    <h3>Other Peoples Posts</h3>
-        <div id="post_holder">
-            <!--this will hold our example post for now-->
+        <div class="card">
+            <h2>Welcome to the 3d printing discussion board</h2>
+            <p>Here is the 3d printing discussion board, where you can find posts related to 3d printing and relevant topics. You can talk about all of your 3d printing stuff here <br>
+            like your projects, questions, or fun facts you wanna share with the community. The skys the limit so have fun and keep printing.
+            </p> <br>
         </div>
-        <!--
-    <img src="images/example_post.PNG" alt="A 3d printed holder for a soda can, with a coffe mug style handle for ease of use" width="150" height="180">
-    <p> look at this cool print I found online, I made it on my machine and it came out great heres a page link to the file</p>
-    <a href="https://www.printables.com/model/180044-can-holder">https://www.printables.com/model/180044-can-holder</a>
-    -->
-    <script src="js/post_handler.js"></script>
-    </div>
+   
+        <div class="card">
+            <h3>Make a Post</h3>
+            <form class="color" id="post_form">
+
+            <label for="pname">Post name:</label><br>
+            <input type="text" id="pname" name="pname" maxlength="50" size="50" required><br>
+
+            <input type="radio" id="yourWork" name="yourWork" value="yourWork">
+            <label for="yourWork">Your work</label><br>
+
+            <input type="radio" id="otherWork" name="otherWork" value="otherWork">
+            <label for="otherWork">Cool stuff I found</label><br>
+
+            <label for="desc">Post text:</label><br>
+            <input type="text" id="desc" name="desc" size="50"  required><br>
+
+            <label for="files">Select files:</label>
+            <input type="file" id="files" name="files" multiple><br>
+
+            <label for="imgDesc">Image description:</label><br>
+            <input type="text" id="imgDesc" name="imgDesc" size="50"><br>
+
+            <input type="submit" value="Post">
+            </form>
+            <div id = "feedback"></div>
+        </div>
+    
+  
+
+        <div class="card">
+            <h3>Other Peoples Posts</h3>
+            <div id="post_holder">
+            <!--this will hold our example post for now-->
+            </div>
+       
+            <script src="js/post_handler.js"></script>
+        </div>
     </div>
 
 
@@ -91,7 +87,7 @@
             Written by <a href=mailto:“disha@uplers.com”>Nicholas Kurgan</a>.<br>
             nicholas_kurgan@uri.edu
             </address>
-        </div>
+    </div>
 
 </body>
 </html>

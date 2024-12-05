@@ -83,11 +83,18 @@ form.color {
     padding-top: 12px;  
     padding-bottom: 12px;
     }
-
+/*
   .header-right{
     float:right;
     margin-top:12px;
   }
+    */
+
+  .header-right {
+    display: flex;
+    gap: 20px; /* Spacing between buttons for larger screens */
+  }
+
   .header-left{
     float:left;
     margin-top:12px;
@@ -124,17 +131,26 @@ form.color {
   #post_image {
     padding-left:20px;
     max-width:50%;
-    max-height:auto;
+    height:auto;
   }
   
   
 
+
+  /* new shit to try to fix my issues */
+
+  a {
+    text-decoration: none;
+    padding: 10px 20px; /* Ensures padding for all anchor tags */
+    display: inline-block; /* Allows padding and spacing to apply correctly */
+  }
 
 
   /*
   so this says if smaller than the pixel screen size, have the classes do this behavior here instead
   */
   @media only screen and (max-width: 600px) {
+    /*
     .header {
       float: none;
       display: block;
@@ -149,13 +165,40 @@ form.color {
         margin-top:8px;
       }
     
-    .card{
-      font-size: 20px;
-    }
+    */
+  .card{
+    font-size: 20px;
   }
+  
   img {
     max-width: 100%;
     height: auto;
-    
   }
-  
+
+
+  /* new spacing for nav buttons test */
+  .header {
+    flex-direction: column; /* Stack header contents vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    width: 100%; /* Ensure full width */
+    gap: 12px; /* Vertical spacing between links */
+  }
+
+  .header a {
+    font-size: 16px; /* Adjust size for smaller screens */
+    width: 100%; /* Ensure buttons take up the full width */
+    
+    padding: 10px; /* Consistent padding */
+  }
+
+  .header a:hover {
+    background-color: rgb(255, 198, 92); /* Retain hover effect */
+    color: inherit; /* Keep text color unchanged on hover */
+  }
+}
